@@ -19,6 +19,15 @@
 :root { --c-canvas: #1e1815; --c-surface: #2a221d; --c-ink: #f2e9dd; --c-ink-soft: #b9ab9b; --c-accent: #c8a25c; --c-accent-ink: #1f170f; --c-accent-deep: #c8a25c; --f-display: "Unbounded", "Arial Black", system-ui, sans-serif; --f-text: "Golos Text", "Segoe UI", system-ui, sans-serif; --h1k: 0.8; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
+<style>
+.s-master { display: grid; gap: 24px; max-width: 52em; padding: 28px 24px 24px; background: var(--c-surface); border: 1px solid var(--hair); border-radius: var(--r); }
+.s-master__name { font-family: var(--f-display); font-weight: 600; font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.05; color: var(--c-accent); }
+.s-master__quotes { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.s-master__quotes li { padding: 18px 0; border-top: 1px solid var(--hair); }
+.s-master__quotes blockquote { margin: 0; font-size: 1.05rem; }
+.s-master__who { margin-top: 8px; font-size: .85rem; color: var(--c-ink-soft); }
+.s-master__more { color: var(--c-ink-soft); font-size: .95rem; max-width: 52em; margin-top: 18px; }
+</style>
 </head>
 <body class="s-prod" id="top" data-wa="79822605440" data-tg="" data-max="">
 <header class="s-bar" data-s-bar>
@@ -102,6 +111,19 @@
       </ul>
     </div></div>
     <p class="s-note">Цена в прайсе - цена на карточке Яндекс.Карт. Актуальность уточняйте при записи.</p>
+  </section>
+
+  <section class="s-section s-reveal" id="master">
+    <header class="s-section__head"><h2>К кому возвращаются</h2><p>Мастер, которого в отзывах на Яндекс.Картах называют по имени. Слова клиентов – без правок.</p></header>
+    <div class="s-master">
+      <span class="s-master__name">Юрий</span>
+      <ul class="s-master__quotes">
+        <li><blockquote>«Отличный мастер Юрий. Стригусь у него уже 7 лет. Профессионал. Во время стрижки поддержит диалог, одни плюсы»</blockquote><p class="s-master__who">Vita Bond · 2 августа 2026</p></li>
+        <li><blockquote>«Классное место! Мастер Юрий профессионал!»</blockquote><p class="s-master__who">Ольга Кушнир · 6 марта 2026</p></li>
+        <li><blockquote>«Барбер Юрий топ мастер в своём деле - настоящий профессионал.»</blockquote><p class="s-master__who">Виталий Мосов · 28 декабря 2025</p></li>
+      </ul>
+    </div>
+    <p class="s-master__more">Остальных мастеров добавим на эту страницу по вашему списку: имя, уровень, фото.</p>
   </section>
 
   <section class="s-section s-reveal">
